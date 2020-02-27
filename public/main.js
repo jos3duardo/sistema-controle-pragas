@@ -27,8 +27,9 @@ document.addEventListener('DOMContentLoaded', function() {
     let lista = ''
 
     data.forEach(function (praga) {
+      let cor = ((praga.quantity / area) * 100) > 30 ? 'red-text' : 'black-text'
       lista += "<li>"+
-        "<div class='collapsible-header'><i class='material-icons'>bug_report</i>"+praga.name +"</div>"+
+        "<div class='collapsible-header'><i class='material-icons "+cor+"'>bug_report</i>"+praga.name +"</div>"+
         "<div class='collapsible-body'><span>"+controle(praga.quantity, area)+"</span></div>"+
         "</li>"
     })
