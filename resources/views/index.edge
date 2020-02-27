@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sistema</title>
+</head>
+
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<!-- icons -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <body>
+    <div class="container">
+      <h6>Sistema de Monitoramento de Pragas</h6>
+      <p>Área total da lavoura: 250 |  Nível maxímo de incidencia: 30%</p>
+      <ul class="collapsible" id="dados">
+      </ul>
+    </div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script> <!--https://github.com/axios/axios -->
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    {{ script('main') }}
+</body>
+</html>
